@@ -7,8 +7,22 @@
 
 function singles(arr){
     if (arr === undefined) throw new Error("array is required");
-    // Your code here!
-}
+    
+    //reorder the array to ascending order
+    arr.sort((a, b) => a - b);
+
+    //create an empty array called uniqueArray
+    let uniqueArray = [];
+    
+    //loop through arr. On each element check if the previous or next element is equal to current element. if not, push current elememnt to uniqueArray
+    
+        arr.forEach((number, index)=> {    
+            (number == arr[index-1] || number == arr[index+1]) ? null : uniqueArray.push(number);
+            });
+        
+        //if uniqueArray is empty return 0 else return sum of elements in newArray
+        return (uniqueArray.length === 0) ? 0 : uniqueArray.reduce((total, currentNumber ) => total + currentNumber);
+        }
 
 module.exports = {
     singles
