@@ -24,14 +24,22 @@
 function rowWeights(array){
 
     //create empty teamArray
+    let teamArray = [];
 
     //loop through array adding up all elements in a variable at an even number index
-    //push total to newArray
+    const evens = array.filter((item, index) => index % 2 === 0);
+    
+    //push total to teamArray
+    teamArray.push((evens.length == 0) ? 0: evens.reduce((total, currentNumber ) => total + currentNumber));
+
     //loop through array adding up all elements in a variable at an odd number index
-    //push total to newArray
+    const odds = array.filter((item, index) => index % 2 === 1);
 
-    //return newArray
+    //push total to teamArray
+    teamArray.push((odds.length == 0) ? 0: odds.reduce((total, currentNumber ) => total + currentNumber));
 
+    //return teamArray
+    return teamArray;
 }
 
 module.exports = {
