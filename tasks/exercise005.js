@@ -20,7 +20,15 @@
 // wave("hello") => ["Hello", "hEllo", "heLlo", "helLo", "hellO"]
 
 function mexicanWave(str){
-    // Your code here!
+    //create empty wave array
+    
+    //loop through each element in str
+    
+    //if current element is not blank, output a new word with the current element in upper case
+    
+    //push this new word to the wave array
+    
+    //return wave array
 }
 
 module.exports = {
