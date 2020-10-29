@@ -22,7 +22,16 @@
 // The first element 80 is the total weight of team 1, and the second element 0 is the total weight of team 2.
 
 function rowWeights(array){
-    // Your code here!
+
+    //create empty teamArray
+
+    //loop through array adding up all elements in a variable at an even number index
+    //push total to newArray
+    //loop through array adding up all elements in a variable at an odd number index
+    //push total to newArray
+
+    //return newArray
+
 }
 
 module.exports = {
