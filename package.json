@@ -1,0 +1,25 @@
+{
+  "name": "yrtt_entry_katas_js",
+  "version": "1.0.0",
+  "description": "A repository of JavaScript challenges to complete for entry onto the course",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "eslint": "eslint ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techreturners/yrtt_entry_katas_js.git"
+  },
+  "keywords": [],
+  "author": "Tech Returners",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/techreturners/yrtt_entry_katas_js/issues"
+  },
+  "homepage": "https://github.com/techreturners/yrtt_entry_katas_js#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "jest": "^25.2.4"
+  }
+}
