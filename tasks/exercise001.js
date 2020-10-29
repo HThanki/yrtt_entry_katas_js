@@ -15,7 +15,6 @@ function singles(arr){
     let uniqueArray = [];
     
     //loop through arr. On each element check if the previous or next element is equal to current element. if not, push current elememnt to uniqueArray
-    
         arr.forEach((number, index)=> {    
             (number == arr[index-1] || number == arr[index+1]) ? null : uniqueArray.push(number);
             });
