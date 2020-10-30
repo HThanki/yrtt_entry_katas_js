@@ -21,14 +21,21 @@
 
 function mexicanWave(str){
     //create empty wave array
+    let wave = [];
+
+    //loop through each element in str. If current element is not blank, output a new word with that letter in capitals
     
-    //loop through each element in str
-    
-    //if current element is not blank, output a new word with the current element in upper case
-    
-    //push this new word to the wave array
-    
+    for (var i = 0; i < str.length; i++) {
+        if (str[i] !== " ") {
+          let newWord = str.slice(0, i)+ str.charAt(i).toUpperCase() + str.slice(i+1);
+          
+          //push this new word to the wave array
+          wave.push(newWord);
+          }
+      }
+       
     //return wave array
+    return wave;
 }
 
 module.exports = {
