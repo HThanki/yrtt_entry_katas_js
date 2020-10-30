@@ -4,7 +4,7 @@
 
 function past(h, m, s){
     //convert hours to milliseconds (hours x 3600000) + convert minutes to milliseconds (minutes x 60000) + convert seconds to milliseconds (seconds x 1000) 
-    return (h * 3600000)+ (m * 60000)+ (s * 1000);
+    return (h * 3600000) + (m * 60000) + (s * 1000);
 }
 
 module.exports = {
